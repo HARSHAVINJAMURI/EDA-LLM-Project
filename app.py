@@ -9,7 +9,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 import os
 
 # Configure Gemini
-genai.configure(api_key="AIzaSyD7gUp_IY7YF3LQLGAmpAgh2lDgSzHq_kY")  # Replace with your API key
+genai.configure(api_key="your_api_key_here")  # Replace with your API key
 
 def eda_analysis(file_path):
     df = pd.read_csv(file_path)
@@ -142,3 +142,4 @@ with gr.Blocks(title="📊 LLM-Powered EDA with Gemini") as demo:
     )
 
 demo.launch(share=True)
+
